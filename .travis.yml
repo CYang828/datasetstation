@@ -1,0 +1,17 @@
+services:
+  - mysql
+  - mongodb
+  - redis-server
+  - rabbitmq
+language: python
+sudo: required
+cache: pip
+python:
+  - '2.7'
+os:
+  - 'linux'
+script:
+  - python setup.py install
+  - python fastweb/test/service_server.py &
+  - pytest
+

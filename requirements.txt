@@ -1,0 +1,8 @@
+boto3==1.24.21
+aiobotocore==2.4.0
+botocore==1.27.59
+aiohttp==3.8.1
+async-timeout==4.0.0
+datasets[s3]==2.4.0
+yaspin
+

@@ -1,0 +1,14 @@
+*.pyc
+build/
+dist/
+fast_datasets.egg-info/
+*.log*
+*.swp
+*.un~
+.eggs/
+.idea/
+*.rdb
+docs/_build
+.cache
+*.bak
+clean.sh
