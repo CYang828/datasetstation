@@ -1,8 +1,8 @@
 # china-dataset
 
-<p align="center">
+<!-- <p align="center">
     <img src="http://aimaksen.bslience.cn/china-datasets-logo.jpg">
-</p>
+</p> -->
 
 <p align="center">
     <a href="https://github.com/CYang828/china-datasets">
