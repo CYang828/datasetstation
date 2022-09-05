@@ -31,7 +31,7 @@ print(dataset)
 ```
 
 <p align="center">
-    <img src="http://aimaksen.bslience.cn/screenshot-datasets.jpg" />
+    <img src="http://aimaksen.bslience.cn/screanshot-datasets.gif" />
 </p>
 
 ## 目前支持数据集
