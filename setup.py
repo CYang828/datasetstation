@@ -33,11 +33,11 @@ elif sys.version_info > (3, 0):
 kwargs['install_requires'] = install_requires
 
 setup(
-    name='fast-datasets',
+    name='china-datasets',
     version=version,
     include_package_data=True,
     packages=find_packages(),
-    package_data={'fast_datasets': []},
+    package_data={'china_datasets': []},
     entry_points={
         'console_scripts': [
             # 'fasthrift = fastweb.command.service.thrift:gen_thrift_auxiliary',
@@ -46,8 +46,8 @@ setup(
     },
     author='CYang',
     author_email='zhangchunyang_pri@126.com',
-    description="fast-datasets 是一个快速下载数据集，处理数据集的 python 软件包。",
-    url="https://github.com/BSlience/fast-datasets",
+    description="china-datasets 是一个快速下载数据集，处理数据集的 python 软件包。",
+    url="https://github.com/BSlience/china-datasets",
     long_description_content_type="text/markdown",
     **kwargs
 )

@@ -214,7 +214,7 @@ def list2sequence(l):
     s = ''
     for idx, i in enumerate(l):
         if isinstance(i, dict):
-           i = '"' + dict2sequence(i) + '"'
+            i = '"' + dict2sequence(i) + '"'
         s += str(i)
         if idx != len(l) - 1:
             s += ' '
@@ -287,5 +287,3 @@ def str2everything(s):
             return utf8(s)
     except (SyntaxError, TypeError):
         return utf8(s)
-
-

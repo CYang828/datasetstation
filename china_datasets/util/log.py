@@ -84,7 +84,7 @@ def record(level, msg, r=None, extra=None):
     logger_color = COLORMAP.get(level, 'white')
 
     if r:
-        logger_func = getattr(r,  'info' if level.lower() == 'important' else level.lower())
+        logger_func = getattr(r, 'info' if level.lower() == 'important' else level.lower())
         logger_func(colored(msg, logger_color, attrs=['bold']), extra=extra)
     else:
         print((colored(msg, logger_color, attrs=['bold'])))

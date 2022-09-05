@@ -1,8 +1,18 @@
+Metadata-Version: 2.1
+Name: china-datasets
+Version: 1.0.0.0
+Summary: china-datasets 是一个快速下载数据集，处理数据集的 python 软件包。
+Home-page: https://github.com/BSlience/china-datasets
+Author: CYang
+Author-email: zhangchunyang_pri@126.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # china-dataset
 
-<p align="center">
-    <img src="http://aimaksen.bslience.cn/china-datasets-logo.jpg">
-</p>
+<img align="center" src="http://aimaksen.bslience.cn/china-datasets-logo.jpg">
 
 <p align="center">
     <a href="https://github.com/CYang828/china-datasets">
@@ -18,18 +28,9 @@ It is a charming web-server framework based on the effective technique and organ
 
 ```bash
 pip install china-datasets
+
+
 ```
-
-```python
-from china_datasets import load_dataset
-
-dataset = load_dataset('hotel-review')
-print(dataset)
-```
-
-<p align="center">
-    <img src="http://aimaksen.bslience.cn/china-datasets-logo.jpg" />
-</p>
 
 ## 目前支持数据集
 
@@ -48,3 +49,5 @@ print(dataset)
 [Apache License](https://github.com/CYang828/china-datasets/LICENSE.md)
 
 Copyright on (c) 2022-present CYang
+
+

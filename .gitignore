@@ -12,3 +12,4 @@ docs/_build
 .cache
 *.bak
 clean.sh
+fast-datasets-upload/*
