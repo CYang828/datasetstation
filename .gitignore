@@ -1,7 +1,7 @@
 *.pyc
 build/
 dist/
-fast_datasets.egg-info/
+china_datasets.egg-info/
 *.log*
 *.swp
 *.un~
@@ -12,4 +12,4 @@ docs/_build
 .cache
 *.bak
 clean.sh
-fast-datasets-upload/*
+china-datasets-upload/*
