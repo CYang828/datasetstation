@@ -12,7 +12,10 @@
 
 ## 介绍
 
-It is a charming web-server framework based on the effective technique and organized into component. These components could be used with only several config and code. It is always so easy to make a new component.It also provides many scenes to construct your apis, pages, rpc functions, tasks and so on efficiently.
+在国内也能快速加载数据集，并且能够使用 huggingface datasets 进行统一、快速的处理数据集。
+
+- 不用等了很久，结果 Timeout
+- 不用每次写不同的数据预处理代码
 
 ## 快速使用
 
@@ -28,7 +31,7 @@ print(dataset)
 ```
 
 <p align="center">
-    <img src="http://aimaksen.bslience.cn/china-datasets-logo.jpg" />
+    <img src="http://aimaksen.bslience.cn/screenshot-datasets.jpg" />
 </p>
 
 ## 目前支持数据集
