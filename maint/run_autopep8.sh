@@ -7,4 +7,4 @@
 # E301 adds a blank line between docstring and first method
 # E309 adds a blank line between class declaration and docstring (?)
 
-autopep8 --ignore=W602,E501,E301,E309 -i fast_datasets/*.py fast_datasets/util/*.py fast_datasets/test/*.py
+autopep8 --ignore=W602,E501,E301,E309 -i china_datasets/*.py china_datasets/util/*.py china_datasets/test/*.py
