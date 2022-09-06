@@ -13,3 +13,5 @@ docs/_build
 *.bak
 clean.sh
 china-datasets-upload/*
+.DS_Store
+ChineseNlpCorpus-master/*

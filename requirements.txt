@@ -1,4 +1,5 @@
 boto3==1.24.57
 datasets[s3]
 yaspin
+colorlog
 

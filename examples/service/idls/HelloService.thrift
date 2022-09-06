@@ -1,4 +1,0 @@
-service HelloService {
-    string sayHello()
-}
-
