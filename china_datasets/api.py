@@ -58,3 +58,8 @@ def upload_dataset(dataset, name, **dataset_info):
     # 上传数据到远端
     s3_upload_files(name, dataset_path)
     return dataset
+
+
+def list_datasets():
+    repo = DatasetRepo()
+    return repo.list_datasets()
