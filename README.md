@@ -23,7 +23,10 @@ pip install china-datasets
 ```
 
 ```python
-from china_datasets import load_dataset
+from china_datasets import load_dataset, list_datasets
+
+# 打印支持的数据集
+print(list_datasets())
 
 # 加载数据及并打印并第一个样本
 hotel_review = load_dataset('hotel-review')
