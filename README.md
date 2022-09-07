@@ -4,15 +4,16 @@
     <img src="http://aimaksen.bslience.cn/china-datasets-logo.jpg">
 </p> -->
 
-<p align="center">
+<!-- <p align="center">
     <a href="https://github.com/CYang828/china-datasets">
         <img src="https://travis-ci.org/CYang828/china-datasets.svg?branch=master" alt="fastweb">
     </a>
-</p>
+</p> -->
 
 ## 介绍
 
-在国内也能快速加载数据集，并且能够使用 huggingface datasets 进行统一、快速的处理数据集。
+有没有找不到中文数据集，有没有找到中文数据集下载缓慢，下载了数据集每次都要根据不同的框架写不同的预处理逻辑的痛苦。
+这个包帮你搞定这些痛苦！
 
 - 不用等了很久，结果 Timeout
 - 不用每次写不同的数据预处理代码
@@ -26,8 +27,18 @@ pip install china-datasets
 ```python
 from china_datasets import load_dataset
 
-dataset = load_dataset('hotel-review')
-print(dataset)
+# 加载数据及并打印并第一个样本
+hotel_review = load_dataset('hotel-review')
+print(hotel_review['train'][0])
+
+# 处理数据集 - 给每个样本增加一个文本长度的特征
+hotel_review = hotel_review.map(lambda x: {"length": len(x["text"])})
+
+# 结合 transformers 库，快速使用各种模型处理任务
+from transformers import AutoTokenizer
+tokenizer = AutoTokenizer.from_pretrained('bert-base-cased')
+
+tokenized_dataset = hotel_review.map(lambda x: tokenizer(x['text']), batched=True)
 ```
 
 <p align="center">
@@ -44,7 +55,6 @@ print(dataset)
 | chinese-hotel-review | 【中文】携程酒店评价情感分析  |
 | dbms | 【中文】豆瓣电影评论、打分数据  |
 | ez-douban | 【中文】豆瓣电影信息、打分、评论  |
-| ez-douban | 【中文】豆瓣电影信息、打分、评论  |
 | waimai-review-10k | 【中文】外卖评价数据 10k 条，正负两种情绪  |
 | weibo-senti-100k | 【中文】微博情感分析 100k 条，正负两种情绪  |
 | simplifyweibo-4-moods | 【中文】微博情感分析，喜悦、愤怒、厌恶、低落四种情绪 |
@@ -52,7 +62,7 @@ print(dataset)
 | eshopping-10-cats | 【中文】电商 10 中商品，正负情感 |
 
 
-
+** 如果你有数据集，希望也能快速使用，请联系作者 zhagnchunyang_pri@126.com。存储空间有限，先到先得！**
 
 
 ## 更新日志
