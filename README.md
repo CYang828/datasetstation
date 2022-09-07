@@ -71,9 +71,9 @@ tokenized_dataset = hotel_review.map(lambda x: tokenizer(x['text']), batched=Tru
 
 ## ROADMAP
 
-每个版本详细的变更日志 [release notes](https://github.com/CYang828/china-datasets/ROADMAP.md).
+每个版本详细的变更日志 [release notes](https://github.com/CYang828/china-datasets/blob/master/ROADMAP.md).
 
 ## 协议
-[Apache License](https://github.com/CYang828/china-datasets/LICENSE.md)
+[Apache License](https://github.com/CYang828/china-datasets/blob/master/LICENSE)
 
 Copyright on (c) 2022-present CYang
