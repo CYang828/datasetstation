@@ -46,6 +46,9 @@ tokenized_dataset = hotel_review.map(lambda x: tokenizer(x['text']), batched=Tru
     <img src="http://aimaksen.bslience.cn/screanshot-datasets.gif" />
 </p>
 
+
+更多的关于 dataset 的操作，请参考 [Huggingface Datasets 文档](https://huggingface.co/docs/datasets/index)。
+
 ## 目前支持数据集
 
 |       数据集      | 介绍                     |
