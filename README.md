@@ -57,7 +57,7 @@ tokenized_dataset = hotel_review.map(lambda x: tokenizer(x['text']), batched=Tru
 | weibo-senti-100k | 【中文】微博情感分析 100k 条，正负两种情绪  |
 | simplifyweibo-4-moods | 【中文】微博情感分析，喜悦、愤怒、厌恶、低落四种情绪 |
 | eshopping-10-cats | 【中文】电商 10 中商品，正负情感 |
-| eshopping-10-cats | 【中文】电商 10 中商品，正负情感 |
+| squad | 【英文】Stanford Question Answering Dataset (SQuAD) |
 
 
 ** 如果你有数据集，希望也能快速使用，请联系作者 zhagnchunyang_pri@126.com。存储空间有限，先到先得！**

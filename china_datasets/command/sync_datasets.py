@@ -1,18 +1,21 @@
-import argparse
+import json
 
-from china_datasets.repo_list import DATASETS
+from china_datasets.util.log import getLogger
 from china_datasets.util.s3 import s3_upload_files
-from china_datasets.config import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
+from china_datasets.config import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, TMP_PATH, D_S
 
 from datasets import load_dataset
 from datasets.filesystems import S3FileSystem
 
 
-# Download Temp Path
-TMP_PATH = "/tmp/{ds}"
+logger = getLogger()
 
 
-def main(parser):
+def sync(args):
+    if args.f:
+        with open(args.f) as f:
+            DATASETS = json.load(f)
+
     # 对比数据集
     dataset_names_downloading = list(DATASETS.keys())
     dataset_names_downloading = set(map(
@@ -29,8 +32,9 @@ def main(parser):
     dataset_names_already = dataset_names_downloading - dataset_names_already
 
     already_num = len(dataset_names_already)
+    logger.info('待同步的数据集有 {} 个\n{}'.format(already_num, D_S))
+
     if already_num:
-        print('待同步的数据集有 {} 个\n--------------------'.format(already_num))
         for dataset in dataset_names_already:  
             # 下载和准备数据集
             dataset_name = dataset[dataset.rfind('/')+1:]
@@ -43,9 +47,5 @@ def main(parser):
     
             # 上传数据集
             s3_upload_files(dataset_name, dataset_path)
-            print('--------------------')
+            print('{}'.format(D_S))
 
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='同步数据集')
-    main(parser)

@@ -40,14 +40,13 @@ setup(
     package_data={'china_datasets': []},
     entry_points={
         'console_scripts': [
-            # 'fasthrift = fastweb.command.service.thrift:gen_thrift_auxiliary',
-            # 'fast = fastweb.command.fast:main'
+            'china-datasets = china_datasets.command.main:main',
         ],
     },
     author='CYang',
     author_email='zhangchunyang_pri@126.com',
     description="china-datasets 是一个快速下载中文数据集，处理数据集，精益建模的包。",
-    url="https://github.com/BSlience/china-datasets",
+    url="https://github.com/CYang828/china-datasets",
     long_description_content_type="text/markdown",
     **kwargs
 )

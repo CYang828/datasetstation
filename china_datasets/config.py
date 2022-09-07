@@ -8,4 +8,4 @@ AWS_SECRET_ACCESS_KEY = "chUsxXeX199GlBQsNzkYH28tjYqebei+M5Rf1E5z"
 TMP_PATH = "/tmp/{ds}"
 
 # Divide String
-D_S = "=" * 20
+D_S = "=" * 50
