@@ -11,7 +11,7 @@
 </p> -->
 
 有没有找不到中文数据集，有没有找到中文数据集下载缓慢，下载了数据集每次都要根据不同的框架写不同的预处理逻辑的痛苦。
-这个包帮你搞定这些痛苦！
+这个包帮你搞定这些！
 
 - 不用等了很久，结果 Timeout
 - 不用每次写不同的数据预处理代码
@@ -63,9 +63,9 @@ tokenized_dataset = hotel_review.map(lambda x: tokenizer(x['text']), batched=Tru
 ** 如果你有数据集，希望也能快速使用，请联系作者 zhagnchunyang_pri@126.com。存储空间有限，先到先得！**
 
 
-## 更新日志
+## ROADMAP
 
-每个版本详细的变更日志 [release notes](https://github.com/BSlience/fastweb/CHANGELOG.md).
+每个版本详细的变更日志 [release notes](https://github.com/CYang828/china-datasets/ROADMAP.md).
 
 ## 协议
 [Apache License](https://github.com/CYang828/china-datasets/LICENSE.md)

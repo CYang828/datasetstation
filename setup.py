@@ -46,7 +46,7 @@ setup(
     },
     author='CYang',
     author_email='zhangchunyang_pri@126.com',
-    description="china-datasets 是一个快速下载数据集，处理数据集的 python 软件包。",
+    description="china-datasets 是一个快速下载中文数据集，处理数据集，精益建模的包。",
     url="https://github.com/BSlience/china-datasets",
     long_description_content_type="text/markdown",
     **kwargs
