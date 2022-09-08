@@ -19,7 +19,7 @@
 ## 快速使用
 
 ```bash
-pip install china-datasets
+pip install datasetstore
 ```
 
 ```python
