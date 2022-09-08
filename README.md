@@ -62,12 +62,12 @@ tokenized_dataset = hotel_review.map(lambda x: tokenizer(x['text']), batched=Tru
 | waimai-review-10k | 【中文】外卖评价数据 10k 条，正负两种情绪  |
 | weibo-senti-100k | 【中文】微博情感分析 100k 条，正负两种情绪  |
 | simplifyweibo-4-moods | 【中文】微博情感分析，喜悦、愤怒、厌恶、低落四种情绪 |
-| eshopping-10-cats | 【中文】电商 10 中商品，正负情感 |
+| eshopping-10-cats | 【中文】电商 10 种商品评价，正负情感 |
 | squad | 【英文】Stanford Question Answering Dataset (SQuAD) |
-| stopwords-cn      |   中文停用词表  |
-| stopwords-hit     | 哈工大停用词表   |
-| stopwords-baidu  | 百度停用词表 |
-| stopwords-scu | 四川大学机器智能实验室停用词库  |
+| stopwords-cn      |   【中文】中文停用词表  |
+| stopwords-hit     | 【中文】哈工大停用词表   |
+| stopwords-baidu  | 【中文】百度停用词表 |
+| stopwords-scu | 【中文】四川大学机器智能实验室停用词库  |
 
 
 
