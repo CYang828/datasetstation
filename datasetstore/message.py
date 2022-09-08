@@ -1,0 +1,1 @@
+CONTACT_ADMIN = "请联系管理员，公众号@春阳CYang"

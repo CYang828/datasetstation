@@ -1,5 +1,6 @@
 from datasetstore.repo import DatasetRepo
-from datasetstore.config import TMP_PATH, D_S
+from datasetstore.message import CONTACT_ADMIN
+from datasetstore.config import TMP_PATH
 from datasetstore.util.s3 import s3_upload_files
 from datasetstore.util.log import getLogger
 
@@ -24,7 +25,7 @@ def load_dataset(path, backend='s3', **kwargs):
         repo = DatasetRepo()
 
         if not repo.is_exist(path):
-            logger.warning('当前仓库不存在此数据集，请联系管理员上传 <zhangchunyang_pri@126.com>')
+            logger.warning('当前仓库不存在此数据集，{}'.format(CONTACT_ADMIN))
             return None
 
         with yaspin(Spinners.moon, text="下载中...") as spinner:
@@ -35,7 +36,7 @@ def load_dataset(path, backend='s3', **kwargs):
                 return dataset
             except BaseException as e:
                 logger.error(e)
-                spinner.text = "下载失败，请联系管理员 <zhangchunyang_pri@126.com>"
+                spinner.text = "下载失败，{}".format(CONTACT_ADMIN)
                 spinner.fail("🙀🙀🙀🙀🙀🙀🙀🙀🙀🙀")
                 return None 
 

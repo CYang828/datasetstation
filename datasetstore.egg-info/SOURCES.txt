@@ -1,5 +1,7 @@
 LICENSE
+MANIFEST.in
 README.md
+requirements.txt
 setup.py
 datasetstore/__init__.py
 datasetstore/api.py

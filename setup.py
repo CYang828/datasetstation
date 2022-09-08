@@ -7,7 +7,7 @@ from setuptools import setup, find_packages
 
 kwargs = {}
 install_requires = []
-version = '1.0.0.0'
+version = '1.0.0.1'
 
 if sys.version_info < (3, 0):
     with open('README.md') as f:
@@ -37,7 +37,7 @@ setup(
     version=version,
     include_package_data=True,
     packages=find_packages(),
-    package_data={'datasetstore': []},
+    package_data={},
     entry_points={
         'console_scripts': [
             'china-datasets = datasetstore.command.main:main',
