@@ -1,6 +1,6 @@
 import argparse
 
-from china_datasets.command.sync_datasets import sync
+from datasetstore.command.sync_datasets import sync
 
 
 def main():

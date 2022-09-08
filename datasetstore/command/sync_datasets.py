@@ -1,8 +1,8 @@
 import json
 
-from china_datasets.util.log import getLogger
-from china_datasets.util.s3 import s3_upload_files
-from china_datasets.config import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, TMP_PATH, D_S
+from datasetstore.util.log import getLogger
+from datasetstore.util.s3 import s3_upload_files
+from datasetstore.config import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, TMP_PATH, D_S
 
 from datasets import load_dataset
 from datasets.filesystems import S3FileSystem

@@ -1,6 +1,6 @@
 import os
 
-from china_datasets.util.log import getLogger
+from datasetstore.util.log import getLogger
 
 import boto3
 from yaspin import yaspin

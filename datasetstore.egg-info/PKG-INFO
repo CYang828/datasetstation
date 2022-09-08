@@ -1,3 +1,15 @@
+Metadata-Version: 2.1
+Name: datasetstore
+Version: 1.0.0.0
+Summary: china-datasets 是一个快速下载中文数据集，处理数据集，精益建模的包。
+Home-page: https://github.com/CYang828/datasetstore
+Author: CYang
+Author-email: zhangchunyang_pri@126.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # datasetstore
 
 <!-- <p align="center">
@@ -77,3 +89,5 @@ tokenized_dataset = hotel_review.map(lambda x: tokenizer(x['text']), batched=Tru
 [Apache License](https://github.com/CYang828/datasetstore/blob/master/LICENSE)
 
 Copyright on (c) 2022-present CYang
+
+

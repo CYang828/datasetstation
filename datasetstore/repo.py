@@ -1,4 +1,4 @@
-from china_datasets.backend import S3StorageBackend
+from datasetstore.backend import S3StorageBackend
 
 
 from datasets import load_from_disk

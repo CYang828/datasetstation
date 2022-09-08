@@ -1,7 +1,7 @@
-from china_datasets.repo import DatasetRepo
-from china_datasets.config import TMP_PATH, D_S
-from china_datasets.util.s3 import s3_upload_files
-from china_datasets.util.log import getLogger
+from datasetstore.repo import DatasetRepo
+from datasetstore.config import TMP_PATH, D_S
+from datasetstore.util.s3 import s3_upload_files
+from datasetstore.util.log import getLogger
 
 from datasets import Dataset, load_dataset as hg_load_datasets
 from yaspin import yaspin
