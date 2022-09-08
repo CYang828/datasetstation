@@ -1,3 +1,0 @@
-[console_scripts]
-china-datasets = datasetstore.command.main:main
-
