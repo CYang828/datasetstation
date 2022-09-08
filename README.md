@@ -66,7 +66,11 @@ tokenized_dataset = hotel_review.map(lambda x: tokenizer(x['text']), batched=Tru
 | squad | 【英文】Stanford Question Answering Dataset (SQuAD) |
 
 
-**（陆续上传更多中文数据集）如果你有数据集，希望也能快速使用，请联系作者 zhagnchunyang_pri@126.com。存储空间有限，先到先得！**
+**（陆续上传更多中文数据集）如果你有数据集，希望也能快速使用，请联系作者公众号 @春阳CYang。存储空间有限，先到先得！**
+
+<p align="center">
+    <img src="http://aimaksen.bslience.cn/qrcode_cyang.jpg" />
+</p>
 
 
 ## ROADMAP
