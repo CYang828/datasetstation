@@ -34,12 +34,7 @@ class DatasetRepo(object):
             self._backend_storage.walk("fast-datasets/{}".format(dataset), maxdepth=1)
         )[0][1]
 
-        if "train" in folders:
-            return load_from_disk(
-                self._backend_storage.backend_uri.format(ds=dataset),
-                fs=self._backend_storage,
-            )
-        else:
+        if folders and 'train' not in folders:
             datasets = {}
             for folder in folders:
                 dataset_path = '{}/{}'.format(dataset, folder)
@@ -48,6 +43,12 @@ class DatasetRepo(object):
                     fs=self._backend_storage,
                 )
             return datasets
+        else:
+            return load_from_disk(
+                self._backend_storage.backend_uri.format(ds=dataset),
+                fs=self._backend_storage,
+            )
+            
 
     def is_exist(self, name):
         if name in self.list():
