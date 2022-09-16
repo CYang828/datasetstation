@@ -4,7 +4,8 @@ from datasetstore.config import TMP_PATH
 from datasetstore.util.s3 import s3_upload_files
 from datasetstore.util.log import getLogger
 
-from datasets import Dataset, load_dataset as hg_load_datasets
+from datasets.arrow_dataset import Dataset
+from datasets.load import  load_dataset as hg_load_datasets
 from yaspin import yaspin
 from yaspin.spinners import Spinners
 

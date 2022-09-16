@@ -16,3 +16,4 @@ china-datasets-upload/*
 .DS_Store
 upload-datasets/*
 datasetstore.egg-info/*
+.ipynb_checkpoints
