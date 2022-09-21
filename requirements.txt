@@ -3,8 +3,8 @@ datasets
 yaspin
 colorlog
 plotly==5.10.0
-jupyterlab>=3
-ipywidgets>=7.6
 cufflinks
 wordcloud
+tokenizers
+pydantic
 

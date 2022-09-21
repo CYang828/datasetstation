@@ -4,14 +4,15 @@ from datasetstore.util.log import getLogger
 from datasetstore.util.s3 import s3_upload_files
 from datasetstore.config import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, TMP_PATH, D_S
 
-from datasets import load_dataset
-from datasets.filesystems import S3FileSystem
+from datasets.load import load_dataset
+from datasets.filesystems.s3filesystem import S3FileSystem
 
 
 logger = getLogger()
 
 
 def sync(args):
+    DATASETS = {}
     if args.f:
         with open(args.f) as f:
             DATASETS = json.load(f)

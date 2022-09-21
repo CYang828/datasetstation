@@ -63,15 +63,14 @@ plt.rcParams["font.sans-serif"]=["SimHei"]
 #用来正常显示负号
 plt.rcParams["axes.unicode_minus"]=False
 
-def wordcloud(dataset, text_column_name):
+def wordcloud(texts):
     """绘制词云"""
-    filtered_dataset = dataset.filter(lambda x: x[text_column_name])
     wordcloud = WordCloud(
         background_color="white",
         font_path="/System/Library/Fonts/PingFang.ttc",
         width=1400,
         height=800
-    ).generate(" ".join(filtered_dataset[text_column_name]))
+    ).generate(" ".join(texts))
     plt.axis("off")  
     plt.imshow(wordcloud)  
     plt.show()
