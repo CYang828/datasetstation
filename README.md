@@ -70,7 +70,6 @@ tokenized_dataset = hotel_review.map(lambda x: tokenizer(x['text']), batched=Tru
 | stopwords-scu | 【中文】四川大学机器智能实验室停用词库  |
 
 
-
 **（陆续上传更多中文数据集）如果你有数据集，希望也能快速使用，请联系作者公众号 @春阳CYang。存储空间有限，先到先得！**
 
 <p align="center">
@@ -78,10 +77,11 @@ tokenized_dataset = hotel_review.map(lambda x: tokenizer(x['text']), batched=Tru
 </p>
 
 
-## ROADMAP
+## 使用方法和版本迭代
 
-每个版本详细的变更日志 [release notes](https://github.com/CYang828/datasetstore/blob/master/ROADMAP.md).
+[每个版本详细的变更日志和使用方法。](https://github.com/CYang828/datasetstore/tree/master/examples).
 
+如果觉得有帮助，希望能给我个星星⭐️
 ## 协议
 [Apache License](https://github.com/CYang828/datasetstore/blob/master/LICENSE)
 
