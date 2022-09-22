@@ -45,7 +45,7 @@ setup(
     },
     author='CYang',
     author_email='zhangchunyang_pri@126.com',
-    description="china-datasets 是一个快速下载中文数据集，处理数据集，精益建模的包。",
+    description="datasetstore 快速下载中文数据集，处理数据集，数据分析、可视化分析，一站式解决数据问题",
     url="https://github.com/CYang828/datasetstore",
     long_description_content_type="text/markdown",
     **kwargs
