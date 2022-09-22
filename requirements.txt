@@ -1,5 +1,7 @@
-s3fs
-datasets
+aiobotocore==1.2.2
+boto3==1.16.28
+s3fs==0.6.0
+datasets==2.4.0
 yaspin
 colorlog
 plotly==5.10.0
@@ -7,6 +9,9 @@ cufflinks
 wordcloud
 tokenizers
 pydantic
+matplotlib==3.2.2
 statsmodels==0.13.2
 pandas-profiling[notebook]
+emoji
+
 

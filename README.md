@@ -22,6 +22,10 @@ datasetstore 快速下载中文数据集，处理数据集，数据分析、可�
 
 ```bash
 pip install datasetstore
+
+# 在 jupyter 中使用，执行下面命令
+jupyter nbextension enable --py widgetsnbextension
+jupyter labextension install jupyter-matplotlib
 ```
 
 ```python

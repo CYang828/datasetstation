@@ -80,7 +80,7 @@ vars:
         pacf_acf_lag: 100
 
 # Sort the variables. Possible values: "ascending", "descending" or null (leaves original sorting)
-sort: null
+sort: descending
 
 # which diagrams to show
 missing_diagrams:
