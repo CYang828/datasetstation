@@ -97,6 +97,7 @@ class Extractor(object):
         remove_phone_number=True,
         remove_punctuation=True,
         remove_whitespace=True,
+        remove_alphabet=False,
         delete_prefix=False,
         redundant_chars=None,
     ):
@@ -138,6 +139,8 @@ class Extractor(object):
             text = self.remove_punctuation(text)
         if remove_whitespace:
             text = self.remove_whitespace(text)
+        if remove_alphabet:
+            text = self.remove_alphabet(text)
 
         return text
 
@@ -842,3 +845,6 @@ class Extractor(object):
 
     def remove_whitespace(self, text):
         return text.translate(str.maketrans('', '', ' \n\t\r'))
+
+    def remove_alphabet(self, text):
+        return text.translate(str.maketrans('', '', string.ascii_lowercase + string.ascii_uppercase))
