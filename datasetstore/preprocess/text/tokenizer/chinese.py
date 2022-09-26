@@ -2,7 +2,7 @@ from typing import Optional, List, Union, Dict, Tuple, Iterator, Iterable
 
 from datasetstore.type import FileListType
 from datasetstore.error import DatasetstoreFunctionNotFoundError
-from datasetstore.preprocess.tokenizer.pretokenizer import (
+from datasetstore.preprocess.text.tokenizer.pretokenizer import (
     CharacterPreTokenizer,
     JiebaPreTokenizer,
 )
