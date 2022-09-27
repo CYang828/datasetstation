@@ -19,7 +19,7 @@ def length_distribution(dataset, text_column_name, quantile=0.8):
     max_example_count = len_count_df[text_column_name].max()
     max_len = len_count_df["text_len"].max()
     len_count_df = len_count_df.rename(
-        {"text_len": "文本长度", "review": "样本个数"}, axis="columns"
+        {"text_len": "文本长度", text_column_name: "样本个数"}, axis="columns"
     )
 
     # 适合截断长度计算
