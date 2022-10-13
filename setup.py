@@ -7,7 +7,7 @@ from setuptools import setup, find_packages
 
 kwargs = {}
 install_requires = []
-version = '1.0.1.6'
+version = '1.0.1.7'
 if sys.version_info < (3, 0):
     with open('README.md') as f:
         kwargs['long_description'] = f.read()
