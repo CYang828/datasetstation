@@ -74,6 +74,13 @@ tokenized_dataset = hotel_review.map(lambda x: tokenizer(x['text']), batched=Tru
 | stopwords-hit     | 【中文】哈工大停用词表   |
 | stopwords-baidu  | 【中文】百度停用词表 |
 | stopwords-scu | 【中文】四川大学机器智能实验室停用词库  |
+| tangshi | 唐诗全集  |
+| songshi| 宋诗全集  |
+| songci| 宋词全集  |
+| lunyu| 论语  |
+| shijing| 诗经  |
+| nalanxingde | 纳兰性德诗集 |
+
 
 
 **（陆续上传更多中文数据集）如果你有数据集，希望也能快速使用，请联系作者公众号 @春阳CYang。存储空间有限，先到先得！**
