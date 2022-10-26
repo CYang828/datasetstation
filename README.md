@@ -1,4 +1,4 @@
-# datasetstore
+# datasetstation
 
 <!-- <p align="center">
     <img src="http://aimaksen.bslience.cn/china-datasets-logo.jpg">
@@ -10,7 +10,7 @@
     </a>
 </p> -->
 
-datasetstore 快速下载中文数据集，处理数据集，数据分析、可视化分析，一站式解决数据问题
+datasetstation 快速下载中文数据集，处理数据集，数据分析、可视化分析，一站式解决数据问题
 
 - 不用等了很久，结果 Timeout
 - 不用每次写不规范的数据预处理代码
@@ -21,7 +21,7 @@ datasetstore 快速下载中文数据集，处理数据集，数据分析、可�
 ## 快速使用
 
 ```bash
-pip install datasetstore
+pip install datasetstation
 
 # 在 jupyter 中使用，执行下面命令
 jupyter nbextension enable --py widgetsnbextension
@@ -29,7 +29,7 @@ jupyter labextension install jupyter-matplotlib
 ```
 
 ```python
-from datasetstore import load_dataset, list_datasets
+from datasetstation import load_dataset, list_datasets
 
 # 打印支持的数据集
 print(list_datasets())
@@ -92,10 +92,10 @@ tokenized_dataset = hotel_review.map(lambda x: tokenizer(x['text']), batched=Tru
 
 ## 使用方法和版本迭代
 
-[每个版本详细的变更日志和使用方法。](https://github.com/CYang828/datasetstore/tree/master/examples).
+[每个版本详细的变更日志和使用方法。](https://github.com/CYang828/datasetstation/tree/master/examples).
 
 如果觉得有帮助，希望能给我个星星⭐️
 ## 协议
-[Apache License](https://github.com/CYang828/datasetstore/blob/master/LICENSE)
+[Apache License](https://github.com/CYang828/datasetstation/blob/master/LICENSE)
 
 Copyright on (c) 2022-present CYang

@@ -1,6 +1,6 @@
 from abc import abstractclassmethod
 
-from datasetstore.config import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, S3_BUCKET_URI
+from datasetstation.config import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, S3_BUCKET_URI
 
 from datasets.filesystems import S3FileSystem
 

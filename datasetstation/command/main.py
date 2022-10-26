@@ -1,6 +1,6 @@
 import argparse
 
-from datasetstore.command.sync_datasets import sync
+from datasetstation.command.sync_datasets import sync
 
 
 def main():

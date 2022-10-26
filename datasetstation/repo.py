@@ -1,8 +1,8 @@
 import os
 import pathlib
 
-from datasetstore.backend import S3StorageBackend
-from datasetstore.config import DEFAULT_DATASET_PATH
+from datasetstation.backend import S3StorageBackend
+from datasetstation.config import DEFAULT_DATASET_PATH
 
 from datasets import load_from_disk
 

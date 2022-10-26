@@ -1,6 +1,6 @@
 import os
 
-from datasetstore.util.log import getLogger
+from datasetstation.util.log import getLogger
 
 import boto3
 from yaspin import yaspin

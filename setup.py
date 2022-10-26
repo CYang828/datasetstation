@@ -32,20 +32,20 @@ elif sys.version_info > (3, 0):
 kwargs['install_requires'] = install_requires
 
 setup(
-    name='datasetstore',
+    name='datasetstation',
     version=version,
     include_package_data=True,
     packages=find_packages(),
     package_data={},
     entry_points={
         'console_scripts': [
-            'china-datasets = datasetstore.command.main:main',
+            'datasetstation = datasetstation.command.main:main',
         ],
     },
     author='CYang',
     author_email='zhangchunyang_pri@126.com',
-    description="datasetstore 快速下载中文数据集，处理数据集，数据分析、可视化分析，一站式解决数据问题",
-    url="https://github.com/CYang828/datasetstore",
+    description="datasetstation 快速下载中文数据集，处理数据集，数据分析、可视化分析，一站式解决数据问题",
+    url="https://github.com/CYang828/datasetstation",
     long_description_content_type="text/markdown",
     **kwargs
 )

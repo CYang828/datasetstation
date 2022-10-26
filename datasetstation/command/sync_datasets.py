@@ -1,8 +1,8 @@
 import json
 
-from datasetstore.util.log import getLogger
-from datasetstore.util.s3 import s3_upload_files
-from datasetstore.config import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, TMP_PATH, D_S
+from datasetstation.util.log import getLogger
+from datasetstation.util.s3 import s3_upload_files
+from datasetstation.config import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, TMP_PATH, D_S
 
 from datasets.load import load_dataset
 from datasets.filesystems.s3filesystem import S3FileSystem
