@@ -11,7 +11,7 @@ AWS_SECRET_ACCESS_KEY = "chUsxXeX199GlBQsNzkYH28tjYqebei+M5Rf1E5z"
 TMP_PATH = "/tmp/{ds}"
 
 # 默认数据集存储地址
-DEFAULT_DATASET_PATH = pathlib.Path('/Users/zhangchunyang/.cache/datasetstore/datasets/')
+DEFAULT_DATASET_PATH = pathlib.Path('/Users/zhangchunyang/.cache/datasetstation/datasets/')
 
 # Divide String
 D_S = "=" * 50
