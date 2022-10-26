@@ -92,7 +92,7 @@ tokenized_dataset = hotel_review.map(lambda x: tokenizer(x['text']), batched=Tru
 
 ## 使用方法和版本迭代
 
-[每个版本详细的变更日志和使用方法。](https://github.com/CYang828/datasetstation/tree/master/examples).
+[每个版本详细的变更日志和使用方法。](https://github.com/CYang828/datasetstation/tree/master/examples)
 
 如果觉得有帮助，希望能给我个星星⭐️
 ## 协议

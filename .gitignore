@@ -15,5 +15,5 @@ clean.sh
 china-datasets-upload/*
 .DS_Store
 upload-datasets/*
-datasetstore.egg-info/*
+datasetstation.egg-info/*
 .ipynb_checkpoints
