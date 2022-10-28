@@ -1,6 +1,8 @@
 from __future__ import unicode_literals
 import sys
 
+import opencc
+
 #: Character code ranges for pertinent CJK ideograph Unicode blocks.
 characters = cjk_ideographs = (
     "\u3007"  # Ideographic number zero, see issue #17
@@ -76,3 +78,18 @@ sent = sentence = "[{characters}{radicals}{non_stops}]*{sentence_end}".format(
     non_stops=non_stops,
     sentence_end=_sentence_end,
 )
+
+
+def convert(mode, s):
+    """汉字文本转换
+       https://github.com/BYVoid/OpenCC
+    """
+    mode_dict = {
+        's2t': 's2t.json',
+        't2s': 't2s.json'
+    }
+
+    converter = opencc.OpenCC(mode_dict[mode])
+    return converter.convert(s) 
+
+

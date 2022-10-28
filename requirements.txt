@@ -14,5 +14,6 @@ statsmodels==0.13.2
 pandas-profiling[notebook]
 emoji
 jieba
+opencc
 
 
