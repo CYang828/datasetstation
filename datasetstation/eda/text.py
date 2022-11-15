@@ -239,6 +239,6 @@ if __name__ == '__main__':
     dataset = load_from_disk('/Users/dachengzi/DeepLearn/huggingface/data/ChnSentiCorp')
     # print(dataset['train']['text'])
 
-    wordcloud(dataset['train']['text'])
-    words_distribution(dataset['train']['text'])
+    # wordcloud(dataset['train']['text'])
+    # words_distribution(dataset['train']['text'])
     pos_distribution(dataset['train']['text'])
