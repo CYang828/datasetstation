@@ -241,4 +241,4 @@ if __name__ == '__main__':
 
     # wordcloud(dataset['train']['text'])
     # words_distribution(dataset['train']['text'])
-    pos_distribution(dataset['train']['text'])
+    # pos_distribution(dataset['train']['text'])
